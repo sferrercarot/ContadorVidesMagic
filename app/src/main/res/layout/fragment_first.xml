@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/BotonVenenoMasP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="P+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BotonVenenoMenosP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_upward_24"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/baseline_arrow_downward_24"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/BotonSumarVidaP1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/BotonVenenoMasP1"
+        app:layout_constraintStart_toStartOf="@+id/BotonVenenoMasP1"
+        app:layout_constraintTop_toBottomOf="@id/BotonVenenoMasP1"
+        app:srcCompat="@drawable/baseline_favorite_24"
+        app:tint="@color/design_default_color_error" />
+
+    <ImageButton
+        android:id="@+id/BotonRestarVidaP1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/BotonVenenoMenosP1"
+        app:layout_constraintStart_toStartOf="@+id/BotonVenenoMenosP1"
+        app:layout_constraintTop_toBottomOf="@+id/BotonVenenoMenosP1"
+        app:srcCompat="@drawable/baseline_favorite_border_24"
+        app:tint="@color/design_default_color_error" />
+
+    <Button
+        android:id="@+id/BotonSumarVenenoP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BotonRestarVenenoP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/TextoP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/BotonRestarVidaP1"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toEndOf="@+id/BotonSumarVidaP1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <ImageButton
+        android:id="@+id/BotonSumarVidaP2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintBottom_toTopOf="@id/BotonSumarVenenoP2"
+        app:layout_constraintEnd_toEndOf="@+id/BotonSumarVenenoP2"
+        app:layout_constraintStart_toStartOf="@+id/BotonSumarVenenoP2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageButton
+        android:id="@+id/BotonRestarVidaP2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintBottom_toTopOf="@+id/BotonRestarVenenoP2"
+        app:layout_constraintEnd_toEndOf="@+id/BotonRestarVenenoP2"
+        app:layout_constraintStart_toStartOf="@+id/BotonRestarVenenoP2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/Texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="20/0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/BotonRestarVidaP2"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toEndOf="@+id/BotonSumarVidaP2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.491" />
+</androidx.constraintlayout.widget.ConstraintLayout>
